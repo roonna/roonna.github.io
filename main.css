@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+a {
+	cursor: pointer;
+	color: #FCF6F1;
+	text-decoration: none;
+	transition: color .2s ease;
+}
+
+
+
+body {
+	color: #524439;
+	background-color: #FCF6F1;
+	margin: 0;
+	font-family: "Montserrat";
+}
+
+h1 {
+	font-family: "Gabriola";
+}
+
+h2, h3 {
+	font-family: "Montserrat";
+}
+
+.content-wrap {
+	padding-top: 70px;
+	margin: 0;
+	height: 100%;
+	text-align: right;
+}
+
+.hidden {
+	display: none;
+}
+
+.selected {
+	color: #839788;
+}

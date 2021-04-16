@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+
+.index_content {
+	text-align: center;
+	font-family: "Montserrat Alternates";
+}
+
+.index_content h1 {
+	color: #C6A58A;
+	font-size: 1.4em;
+}
+
+.index_content a {
+	color: #524439;
+	display: inline-block;
+	margin: auto 30px;
+}
+.index_content a:hover {
+	color: #E5D1D0;
+}
+
+.logo_big {
+	min-width: 300px;
+	width: 40vw;
+	margin: auto;
+}
+
+.index_links {
+	margin-top: 10vh;
+	font-weight: bold;
+}
