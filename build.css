@@ -56,6 +56,8 @@
 	cursor: pointer;
 	user-select: none;
 	z-index: 2;
+	font-size: 1.2em;
+	margin-bottom: 2px;
 }
 
 .toggle-list-content li:hover{
@@ -125,11 +127,41 @@ li {
 	min-height: 500px;
 	background-size: cover;
 	display: block;
+	background-image: url("images/clear.png");
+	transition: background-image .4s ease;
 }
 
 #graphic_base {
 	background-image: url("images/boba_base.png");
 }
 #graphic_tea {
-	background-image: url("images/clear.png");
+}
+
+
+#purchase_switch {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.purchase_button {
+	font-size: 1.6em;
+	/*font-weight: bold;*/
+	font-family: "Gabriola";
+	color: #524439;
+	background-color: #839788;
+	border-radius: 5px;
+	border: 0px solid white;
+	transition: background-color .2s ease;
+}
+
+.purchase_button:hover {
+	background-color: #C6A58A;
+}
+
+
+h2.subheading {
+	margin-bottom: 20px;
 }

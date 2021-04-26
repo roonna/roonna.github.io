@@ -6,8 +6,9 @@
 		<link rel="stylesheet" type="text/css" href="main.css"/>
 		<link rel="stylesheet" type="text/css" href="header.css"/>
 		<link rel="stylesheet" type="text/css" href="build.css"/>
-		<!-- <script type="text/javascript" src="header.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="payment.css"/>
 		<script type="text/javascript" src="build.js"></script>
+		<script type="text/javascript" src="payment.js"></script>
 	</head>
 
 	<body>
@@ -20,9 +21,9 @@
 		</header>
 
 		<div class="content-wrap">
-			<div class="build_menu">
+			<div id="build_content" class="build_menu">
 				<h1>Build</h1>
-				<h2>INGREDIENTS</h2>
+				<h2 class="subheading">INGREDIENTS</h2>
 
 				<ul>
 					<li>
@@ -56,7 +57,32 @@
 				</ul>
 			</div>
 
-			<div class="build_graphic">
+			<div id="purchase_content" class="build_menu hidden">
+				<h1>Payment</h1>
+				<h2 class="subheading">REVIEW ORDER</h2>
+
+				<div class="toggle-list" id="payment_order-toggle"><div id="tea_arrow">&#8249;</div></div>
+				<h3 id="payment_order-title">YOUR BOXED ORDER</h3>
+				<ol class="toggle-list-content" id="tea_list">
+					<li id="tea_milk">Milk Tea</li>
+					<li id="tea_taro">Taro Tea</li>
+					<li id="tea_green">Green Tea</li>
+				</ol>
+
+				<h4 class="split-para">SUBTOTAL<span>$3.99</span></h4>
+				<h4 class="split-para">ORDER FEE<span>$0.90</span></h4>
+				<h4 class="split-para">SALES TAX<span>$0.24</span></h4>
+				<h2 class="total-title">ORDER TOTAL</h2>
+				<h2 class="total">$5.13</h2>
+				
+				<div class="button-cont">
+					<button class="purchase_button" id="myBtn">PURCHASE</button>
+				</div>
+				
+				
+			</div>
+
+			<div class="build_graphic purchase_graphic">
 				<div class="graphic_overlay" id="graphic_tea">
 					<div class="graphic_overlay" id="graphic_extra_ice">
 						<div class="graphic_overlay" id="graphic_toppings_tapioca">
@@ -68,10 +94,39 @@
 						</div>
 					</div>
 				</div>
-				
-				
+			</div>
+
+			<button id="purchase_switch" class="purchase_button">
+				Purchase
+			</button>
+
+			<button id="build_switch" class="purchase_button hidden">
+				Back to Drink Builder
+			</button>
+
+			<div id="myModal" class="modal  hidden">
+  					<!-- Modal content -->
+  					<div class="modal-content">
+						<span class="close">&times;</span>
+						<form>
+							Payment Type:<br>
+							<select name="payment" id="payment">
+								<option value="gPay">Google Pay</option>
+								<option value="aPay">Apple Pay</option>
+								<option value="cCard">Credit Card</option>
+							</select><br><br>
+							Email:<br>
+							<input type="text" name="firstname" value="johndoe@gmail.com">
+							<br><br>
+							Credit Card:<br>
+							<input type="text" name="lastname" value="****1234">
+							<br><br>
+						</form>
+							<a href="complete.html"><button class="purchase_button end">SUBMIT</button></a>
+					</div>
 			</div>
 		</div>
+
 
 		<footer>
 

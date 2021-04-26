@@ -1,0 +1,111 @@
+.build_menu.payment_menu {
+  padding-top: 100px;
+  background-color: #E5D1D0;
+  max-width: 450px;
+  width: 35vw;
+  margin: 0;
+  text-align:left;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+.split-para { 
+	display: block;
+	margin: 15px auto;
+  font-family: "Montserrat";
+  text-align: left;
+  width: 180px;
+}
+
+.split-para span { 
+	display:block;
+	float:right;
+	width:0%;
+	margin-right:10px;
+}
+
+.button-cont {
+    text-align: center;
+}
+
+.purchase-butt {
+	background-color: #555555;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  text-align: center;
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15vh auto; /* 15% from the top and centered */
+  padding: 10vh;
+  border: 1px solid #888;
+  width: 40vw; /* Could be more or less, depending on screen size */
+  height: 40vh;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-centered {
+	text-align: center;
+}
+
+h2.total-title {
+  margin-top: 50px;
+}
+
+h2.total {
+  font-family: "Gabriola";
+  font-size: 1.7em;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+
+#build_switch {
+  background-color: lightslategray;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.purchase_button.end {
+  margin-top: 50px;
+}

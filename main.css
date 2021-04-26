@@ -38,3 +38,10 @@ h2, h3 {
 .selected {
 	color: #839788;
 }
+
+#complete {
+	text-align: center;
+	font-size: 5em;
+	margin-top: 150px;
+	opacity: 0.8;
+}
