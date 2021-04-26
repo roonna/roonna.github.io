@@ -83,3 +83,7 @@ ul {
 .selected {
 	color: #C6A58A;
 }
+
+.blog_links h2 {
+	cursor: pointer;
+}
